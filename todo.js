@@ -1,4 +1,6 @@
 let todoList = JSON.parse(localStorage.getItem("todoList")) || [];
+
+// display the todo-list even when the page is refreshed
 renderAddTodo();
 
 document.querySelector(".js-addTodo-btn").addEventListener("click", () => {
