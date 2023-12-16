@@ -69,8 +69,8 @@ function renderAddTodo() {
     // Short-hand or destructuring: when the variable name and the object property name is the same.
     // const { name, dueDate } = todoObject;
     const displayTodo = `
-    <div>${name}</div>
-    <div>${dueDate}</div>
+    <div class = "todo-name">${name}</div>
+    <div class = "dueDate" >${dueDate}</div>
     <button class = "delete-btn js-delete-btn"
     >Delete</button
     `;
@@ -102,3 +102,9 @@ function handleKeyDown() {
 function saveToStorage() {
   localStorage.setItem("todoList", JSON.stringify(todoList));
 }
+
+// delete all items in the list and save it in local storage
+document.querySelector(".js-clear-item").addEventListener("click", () => {
+  todoList.splice(0, todoList.length);
+  saveToStorage();
+});

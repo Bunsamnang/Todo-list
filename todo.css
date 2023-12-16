@@ -2,9 +2,17 @@ body {
   padding: 0;
   font-family: Arial, Helvetica, sans-serif;
   display: flex;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
   background-color: rgb(35, 35, 35);
   color: whitesmoke;
+}
+a {
+  margin-top: 30px;
+  font-size: 1.3rem;
+  text-decoration: none;
+  color: rgb(225, 57, 57);
 }
 
 .name-input,
