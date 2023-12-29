@@ -70,7 +70,7 @@ a {
 .todo-grid {
   display: grid;
   grid-template-columns: 150px 100px 100px 100px;
-  column-gap: 5px;
+  column-gap: 3.5px;
   row-gap: 10px;
   align-items: center;
 }
